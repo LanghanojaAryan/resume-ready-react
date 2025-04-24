@@ -1,23 +1,24 @@
 
 import { Button } from './ui/button';
-import { Github, Linkedin, Mail, Rocket } from 'lucide-react';
+import { Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 bg-background relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center pt-16 gradient-bg relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgxNDcsIDUxLCAyMzQsIDAuMSkiLz48L3N2Zz4=')] opacity-50" />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-8">
-          <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 fade-in">
-            <Rocket className="w-6 h-6 text-primary animate-pulse" />
+          <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 fade-in floating">
+            <Sparkles className="w-6 h-6 text-primary animate-pulse" />
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text fade-in" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text fade-in glowing-text" style={{ animationDelay: '0.2s' }}>
             Hi, I'm Your Name
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6 hover-scale fade-in" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 hover-scale fade-in shimmer" style={{ animationDelay: '0.4s' }}>
             Final Year Computer Science Student
           </p>
           
@@ -28,7 +29,7 @@ const Hero = () => {
           <div className="flex justify-center space-x-4 fade-in" style={{ animationDelay: '0.8s' }}>
             <Button 
               variant="default" 
-              className="bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
+              className="bg-primary hover:bg-primary/90 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-primary/20 fancy-border"
               asChild
             >
               <a href="#contact" className="flex items-center gap-2">
@@ -39,7 +40,7 @@ const Hero = () => {
             
             <Button 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+              className="border-primary text-primary hover:bg-primary/10 transition-all duration-500 hover:scale-105 hover:shadow-xl group fancy-border"
               asChild
             >
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
@@ -50,7 +51,7 @@ const Hero = () => {
             
             <Button 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+              className="border-primary text-primary hover:bg-primary/10 transition-all duration-500 hover:scale-105 hover:shadow-xl group fancy-border"
               asChild
             >
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">

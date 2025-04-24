@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,6 +32,22 @@
     --radius: 0.5rem;
     font-family: 'Poppins', sans-serif;
   }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 bg-size-200 animate-gradient;
+  }
+
+  .fancy-border {
+    @apply relative before:absolute before:inset-0 before:p-[2px] before:bg-gradient-to-r before:from-primary before:to-accent before:rounded-lg before:-z-10 before:animate-gradient;
+  }
+
+  .glowing-text {
+    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+  }
+
+  .shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent;
+  }
 }
 
 .fade-in {
@@ -64,7 +79,7 @@
 }
 
 .card-hover {
-  @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1;
+  @apply transition-all duration-500 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-card/80 hover:to-primary/5;
 }
 
 @keyframes gradient {
@@ -91,3 +106,17 @@
   }
 }
 
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
