@@ -88,12 +88,24 @@ export default {
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'gradient': 'gradient 8s linear infinite',
       },
       fontFamily: {
         sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
         poppins: ['Poppins', 'sans-serif']
-      }
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      gradient: {
+        '0%, 100%': {
+          'background-position': '0% 50%'
+        },
+        '50%': {
+          'background-position': '100% 50%'
+        },
+      },
     }
   },
   plugins: [require("tailwindcss-animate")],
