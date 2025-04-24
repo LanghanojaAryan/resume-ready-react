@@ -1,37 +1,33 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 211 100% 98%; /* Light blue background */
+    --foreground: 222 47% 11%; /* Dark blue text */
+    
+    --card: 211 100% 95%; /* Light blue card */
+    --card-foreground: 222 47% 11%;
 
-    --card: 240 5% 96%;
-    --card-foreground: 222.2 84% 4.9%;
+    --primary: 217 91% 60%; /* Bright blue primary */
+    --primary-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --secondary: 214 88% 92%; /* Soft blue secondary */
+    --secondary-foreground: 222 47% 11%;
 
-    --primary: 242 47% 34%;
-    --primary-foreground: 210 40% 98%;
+    --muted: 214 88% 95%; /* Very light blue muted */
+    --muted-foreground: 217 10% 45%;
 
-    --secondary: 251 91% 95%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 262 83% 58%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 217 91% 60%; /* Vibrant blue accent */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 262 83% 58%;
+    --border: 214 30% 85%; /* Blue-tinted border */
+    --input: 214 30% 85%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
   }
@@ -52,4 +48,3 @@
     transform: translateY(0);
   }
 }
-

@@ -20,21 +20,21 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-secondary/30">
+    <section id="skills" className="py-20 bg-secondary/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Skills</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, index) => (
             <div 
               key={index}
-              className="bg-card p-6 rounded-lg shadow-sm fade-in"
+              className="bg-card p-6 rounded-lg shadow-md border border-border/50 hover:shadow-lg transition-shadow duration-300 fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <h3 className="text-lg font-semibold mb-4">{category.title}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">{category.title}</h3>
               <div className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="flex items-center gap-2">
-                    <div className="h-2 w-2 bg-accent rounded-full"></div>
+                    <div className="h-2 w-2 bg-primary rounded-full"></div>
                     <span className="text-muted-foreground">{skill}</span>
                   </div>
                 ))}
