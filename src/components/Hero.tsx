@@ -7,20 +7,20 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center pt-16 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="fade-in space-y-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text">
             Hi, I'm Your Name
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 hover-scale">
             Final Year Computer Science Student
           </p>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto hover-scale">
             Passionate about building innovative solutions and creating impactful experiences through code.
           </p>
           
           <div className="flex justify-center space-x-4">
             <Button 
               variant="default" 
-              className="bg-primary hover:bg-primary/90 transition-colors duration-300"
+              className="bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               asChild
             >
               <a href="#contact" className="flex items-center gap-2">
@@ -30,7 +30,7 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               asChild
             >
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
@@ -40,7 +40,7 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               asChild
             >
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
