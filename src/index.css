@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,33 +33,17 @@
     --radius: 0.5rem;
     font-family: 'Poppins', sans-serif;
   }
-
-  .gradient-bg {
-    @apply bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 bg-size-200 animate-gradient;
-  }
-
-  .fancy-border {
-    @apply relative before:absolute before:inset-0 before:p-[2px] before:bg-gradient-to-r before:from-primary before:to-accent before:rounded-lg before:-z-10 before:animate-gradient;
-  }
-
-  .glowing-text {
-    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
-  }
-
-  .shimmer {
-    @apply relative overflow-hidden before:absolute before:inset-0 before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent;
-  }
 }
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeIn 0.6s ease-in forwards;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -75,48 +60,10 @@
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent bg-size-200 animate-gradient;
+  @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
 }
 
 .card-hover {
-  @apply transition-all duration-500 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-card/80 hover:to-primary/5;
+  @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1;
 }
 
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animate-gradient {
-  animation: gradient 8s linear infinite;
-  background-size: 200% auto;
-}
-
-.pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-}
-
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.floating {
-  animation: floating 3s ease-in-out infinite;
-}
-
-@keyframes floating {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}

@@ -1,35 +1,26 @@
 
 import { Button } from './ui/button';
-import { Github, Linkedin, Mail, Sparkles } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 gradient-bg relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgxNDcsIDUxLCAyMzQsIDAuMSkiLz48L3N2Zz4=')] opacity-50" />
-      
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div className="space-y-8">
-          <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 fade-in floating">
-            <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-          </div>
-          
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text fade-in glowing-text" style={{ animationDelay: '0.2s' }}>
+    <section className="min-h-screen flex items-center justify-center pt-16 bg-background">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="fade-in space-y-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text">
             Hi, I'm Your Name
           </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6 hover-scale fade-in shimmer" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 hover-scale">
             Final Year Computer Science Student
           </p>
-          
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto hover-scale fade-in" style={{ animationDelay: '0.6s' }}>
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto hover-scale">
             Passionate about building innovative solutions and creating impactful experiences through code.
           </p>
           
-          <div className="flex justify-center space-x-4 fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="flex justify-center space-x-4">
             <Button 
               variant="default" 
-              className="bg-primary hover:bg-primary/90 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-primary/20 fancy-border"
+              className="bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               asChild
             >
               <a href="#contact" className="flex items-center gap-2">
@@ -37,25 +28,23 @@ const Hero = () => {
                 Contact Me
               </a>
             </Button>
-            
             <Button 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/10 transition-all duration-500 hover:scale-105 hover:shadow-xl group fancy-border"
+              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               asChild
             >
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Github className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                <Github className="w-4 h-4" />
                 GitHub
               </a>
             </Button>
-            
             <Button 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/10 transition-all duration-500 hover:scale-105 hover:shadow-xl group fancy-border"
+              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               asChild
             >
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Linkedin className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
             </Button>
